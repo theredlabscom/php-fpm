@@ -2,7 +2,7 @@
 
 # PHP Docker Container
 
-This is a docker image based on the official [PHP docker container](https://hub.docker.com/_/php/) 
+This is a PHP FPM docker image based on the official [PHP docker container](https://hub.docker.com/_/php/) with additional modules installed.
 
 ## Usage
 
