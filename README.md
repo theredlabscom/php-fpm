@@ -23,7 +23,6 @@ Docker will download and extract the required images, then it will build the mod
 ### 7.0
 
 * gd
-* imagick
 * mysqli
 * mongodb
 * pdo_mysql
