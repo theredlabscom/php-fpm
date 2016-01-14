@@ -7,3 +7,5 @@ RUN docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-di
 RUN docker-php-ext-install iconv mcrypt gd pdo_mysql mysqli
 RUN pecl install mongodb
 RUN docker-php-ext-enable mongodb
+RUN pecl install xdebug-beta
+RUN docker-php-ext-enable xdebug
