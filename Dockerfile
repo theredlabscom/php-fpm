@@ -13,3 +13,5 @@ RUN pecl install redis
 RUN docker-php-ext-enable redis
 RUN pecl install imagick
 RUN docker-php-ext-enable imagick
+RUN pecl install xdebug
+RUN docker-php-ext-enable xdebug
