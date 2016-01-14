@@ -1,8 +1,8 @@
-*last update: 2015-01-13*
+*last update: 2015-01-14*
 
 # PHP Docker Container
 
-This is a docker image based on the official [PHP docker container](https://hub.docker.com/_/php/) 
+This is a docker image based on the official [PHP docker container](https://hub.docker.com/_/php/) with additional modules enabled.
 
 ## Usage
 
@@ -14,43 +14,53 @@ Currently the following tags are available:
 
 So basically, you only have to run a docker container based on this image, mapping your application folder to /var/www/html like this:
 
-	docker run -d -v <my_app_path>:/var/www/html theredlabs/php-fpm:[<tag>]
+    docker run -d -v <my_app_path>:/var/www/html theredlabs/php-fpm:[<tag>]
 
-Docker will download and extract the required images, then it will build the modules available for the tag (version) you specified.  If you don't select a tag it will use the latest version by default.
+Docker will download and extract the required images, with the built-in modules available for the tag (version) you specified.
+
+If you don't select a tag it will use the latest version by default.
 
 ## Modules available per tag
 
 ### 7.0
 
 * gd
-* imagick
+* iconv
+* mcrypt
 * mysqli
 * mongodb
 * pdo_mysql
+* xdebug
 
 ### 5.6
 
 * gd
+* iconv
 * imagick
-* mysqli
-* mongodb
+* mcrypt
 * memcached
+* mongodb
+* mysqli
 * pdo_mysql
 * redis
+* xdebug
 
 ### 5.5
 
 * gd
+* iconv
 * imagick
-* mysqli
-* mongodb
+* mcrypt
 * memcached
+* mongodb
+* mysqli
 * pdo_mysql
 * redis
+* xdebug
 
 ## Custom php.ini file
 
 In order to use a custom *php.ini* file in this docker, please include it in your project and map it to the container when running it for the first time:
 
-	docker run -d -v <my_app_path>:/var/www/html -v <my_ini_file>:/etc/php-fpm/php.ini  theredlabs/php-fpm:[<tag>]
+    docker run -d -v <my_app_path>:/var/www/html -v <my_ini_file>:/etc/php-fpm/php.ini  theredlabs/php-fpm:[<tag>]
 
