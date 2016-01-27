@@ -1,4 +1,4 @@
-*last update: 2015-01-15*
+*last update: 2015-01-27*
 
 # PHP Docker Container
 
@@ -26,6 +26,7 @@ Currently the following tags are available:
 
 * gd
 * iconv
+* mbstring
 * mcrypt
 * mysqli
 * mongodb
@@ -39,6 +40,7 @@ Currently the following tags are available:
 * gd
 * iconv
 * imagick
+* mbstring
 * mcrypt
 * memcached
 * mongodb
@@ -54,6 +56,7 @@ Currently the following tags are available:
 * gd
 * iconv
 * imagick
+* mbstring
 * mcrypt
 * memcached
 * mongodb
