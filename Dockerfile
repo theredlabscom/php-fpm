@@ -9,8 +9,6 @@ RUN pecl install mongodb
 RUN docker-php-ext-enable mongodb
 RUN '' | pecl install memcached
 RUN docker-php-ext-enable memcached
-RUN pecl install redis
-RUN docker-php-ext-enable redis
 RUN pecl install imagick
 RUN docker-php-ext-enable imagick
 RUN pecl install xdebug
