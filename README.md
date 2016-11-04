@@ -48,7 +48,6 @@ Currently the following tags are available:
 * pdo_mysql
 * pdo_pgsql
 * pgsql
-* redis
 * xdebug
 
 ### 5.5
@@ -64,7 +63,6 @@ Currently the following tags are available:
 * pdo_mysql
 * pdo_pgsql
 * pgsql
-* redis
 * xdebug
 
 ## Custom php.ini file
