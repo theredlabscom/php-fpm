@@ -7,9 +7,11 @@ RUN docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-di
 RUN docker-php-ext-install iconv mcrypt gd pdo_mysql mysqli pgsql pdo_pgsql mbstring
 RUN pecl install mongodb
 RUN docker-php-ext-enable mongodb
-RUN '' | pecl install memcached
+RUN '' | pecl install memcached-2.2.0
 RUN docker-php-ext-enable memcached
 RUN pecl install imagick
 RUN docker-php-ext-enable imagick
+RUN pecl install redis-2.2.8
+RUN docker-php-ext-enable redis
 RUN pecl install xdebug
 RUN docker-php-ext-enable xdebug

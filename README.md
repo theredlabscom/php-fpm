@@ -28,8 +28,8 @@ Currently the following tags are available:
 * iconv
 * mbstring
 * mcrypt
-* mysqli
 * mongodb
+* mysqli
 * pdo_mysql
 * pdo_pgsql
 * pgsql
