@@ -1,4 +1,4 @@
-*last update: 2015-01-27*
+*last update: 2017-09-27*
 
 # PHP Docker Container
 
@@ -28,8 +28,8 @@ Currently the following tags are available:
 * iconv
 * mbstring
 * mcrypt
-* mysqli
 * mongodb
+* mysqli
 * pdo_mysql
 * pdo_pgsql
 * pgsql
