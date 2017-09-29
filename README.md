@@ -16,7 +16,8 @@ If you don't select a tag it will use the latest version by default.
 
 Currently the following tags are available:
 
-* 7.0 (latest)
+* 7.1 (latest)
+* 7.0
 * 5.6
 * 5.5
 
@@ -33,7 +34,7 @@ Currently the following tags are available:
 * pdo_mysql
 * pdo_pgsql
 * pgsql
-* xdebug-beta
+* xdebug
 
 ### 5.6
 
